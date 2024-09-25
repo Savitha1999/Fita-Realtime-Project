@@ -21,7 +21,7 @@ export default function Main()
         <Routes>
        
            
-            <Route path="/" element={<Slider />} />
+            <Route path="/fita" element={<Slider />} />
             <Route path="/topbar" element={<Topbar /> } />
             <Route path="/register" element={<Register />} />
             <Route path="/applier" element={<Applier />} />

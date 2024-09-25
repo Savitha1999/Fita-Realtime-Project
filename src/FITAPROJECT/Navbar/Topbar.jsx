@@ -16,13 +16,13 @@ export default function Topbar()
     return (
         <Navbar className="bg-dark navbar-custom" expand="md" fixed="top">
             <Container fluid className="startbar mt-5  mb-4 " >
-                <Navbar.Brand as={Link} to="/" style={{marginRight:"100px"}} className="d-flex  align-items-center">
+                <Navbar.Brand as={Link} to="/fita" style={{marginRight:"100px"}} className="d-flex  align-items-center">
                     <img src={logo1} width={120} height={65} alt="Logo" className="logo  mb-4" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="me-auto  nav-links text-end">
-                        <Nav.Link as={Link} to="/"  className="text-white">
+                        <Nav.Link as={Link} to="/fita"  className="text-white">
                             <IoHome style={{ marginRight: "5px" }} /> Home
                         </Nav.Link>
                         <Nav.Link as={Link} to="/about" className="text-white">
