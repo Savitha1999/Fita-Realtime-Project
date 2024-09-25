@@ -1,0 +1,106 @@
+#client{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    @media(max-width:840px){
+        width: 90%;
+    }
+
+}
+span{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: darkolivegreen;
+}
+
+h1{
+    padding-top: 1rem;
+    text-transform: capitalize;
+}
+#testimonial{
+    margin-top: 2rem;
+    position: relative;
+  
+}
+.card-map{
+    
+    display: flex;
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    height: auto;
+   
+}
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote{
+    font-size: 3rem;
+    color: #01be96;
+    opacity: 0.7;
+}
+.star{
+    color: #ffcd3c;
+        font-size: 1.3rem;
+}
+
+.card-body p{
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+.card-footer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card-img-end{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.details h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    @media(max-width: 580px){
+        font-size: 1rem;
+      
+    }
+    @media(max-width: 538px){
+        font-size: 0.9rem;
+    }
+}
+.details p{
+    font-size: 0.8rem;
+    color: rgba(14, 2, 2, 0.5);
+    @media(max-width: 538px){
+        font-size: 0.6rem;
+       
+    }
+}
+
+
+
+
+
+@media (max-width:600px) {
+     h1
+    {
+        margin-top: 100px;
+    }
+    
+}
+
+
+@media (max-width:1600px) {
+    h1
+   {
+       margin-top: 80px;
+   }
+   
+}
