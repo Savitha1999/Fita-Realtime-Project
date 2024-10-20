@@ -68,8 +68,8 @@ const Menu = () => {
       <Container fluid className='bg-light pb-4'>
         <Container>
         <Row className='place'>
-          <Col xs={12} className="text-center mb-4">
-            <h1 className='mt-3'>OUR PLACEMENT</h1>
+          <Col xs={12} className="text-center mb-4 mt-5 pt-3">
+            <h1 className='mt-5'  >OUR PLACEMENT</h1>
             <h5>Recent Placed Students</h5>
           </Col>
           {cardsData.map((card, index) => {

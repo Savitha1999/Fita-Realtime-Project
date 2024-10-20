@@ -5,6 +5,7 @@ import { Nav, ToastContainer, Form, Button, Alert } from "react-bootstrap";
 import Topbar from "../Navbar/Topbar";
 import Footer from '../footer/Footer';
 import Testmonial from "../testmonial/Testmonial";
+import './card.css';
 
 export default function Card() {
     const [studentData, setStudentData] = useState([]);
@@ -159,7 +160,7 @@ export default function Card() {
         <>
             <ToastContainer />
             <Topbar />
-            <div className="container-fluid bg-black p-5">
+            <div className="container-fluid bg-light p-5">
                 <div className="container p-5 bg-light">
                     <h1 className="text-center text-danger">Dashboard For Students</h1>
                     <div className="row">
@@ -272,7 +273,7 @@ export default function Card() {
 
                     {activeTab === 'placement' && (
                         <div>
-                            <h2>{editMode ? "Edit Placement Details" : "Add Placement Details"}</h2>
+                            <h2 className="play pb-2">{editMode ? "Edit Placement Details" : "Add Placement Details"}</h2>
                             {error && <Alert variant="danger">{error}</Alert>}
                             {success && <Alert variant="success">{success}</Alert>}
 
@@ -330,7 +331,7 @@ export default function Card() {
                                 </Button>
                             </Form>
 
-                            <h2 className="mt-5">Existing Placements</h2>
+                            <h2 className="mt-5 pb-3"> <strong>Existing Placements </strong> </h2>
                             <div className="row">
                                 {placementsData.map((placement) => (
                                     <div key={placement._id} className="col-sm-12 col-md-6 col-lg-4 mb-4">
