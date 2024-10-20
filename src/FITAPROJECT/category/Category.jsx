@@ -12,7 +12,7 @@ export default function Category()
 
         <div className="cat container-fluid bg-light">
 
-           <div className="container text-center pt-3 ">
+           <div className="container text-center pb-5 ">
                 <h1>Explore By Category</h1>
                 <h4 className="text-center" style={{fontWeight:"bold"}} >  Top Courses In Fita </h4>
            </div>

@@ -1,4 +1,4 @@
-.institution
+.recruiter
 input[type=email]
 {
     width: 95%;
@@ -12,7 +12,7 @@ input[type=email]
     cursor: pointer;
 }
 
-.institution
+ .recruiter
 input[type=password]
 {
     width: 95%;
@@ -24,9 +24,9 @@ input[type=password]
     background-position: 250px 13px; */
     margin-left: 10px;
     cursor: pointer;
-}
+} 
 
-.institution
+.recruiter
 {
     border: 2px solid black;
     border-radius: 20px;
@@ -34,45 +34,43 @@ input[type=password]
 
 
 
-.institution {
+.recruiter {
   max-width: 400px;
   margin: auto;
   margin-bottom: 100px;
-  padding: 1rem;
+  padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-bottom: 50px;
-  
 }
 
-.institution h1 {
+.recruiter h1 {
   font-size: 24px;
   margin-bottom: 2rem;
   color: #d9534f; 
-  margin: 0;
+  margin-top: 0;
 }
 
-.institution form {
+.recruiter form {
   display: flex;
   flex-direction: column;
   height: 300px;
- 
+  margin-bottom: 10px;
 }
 
-.institution div {
+.recruiter div {
   margin-bottom: 1rem;
 }
 
-.institution label {
+.recruiter label {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
 }
 
-.institution input {
+.recruiter input {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
@@ -80,13 +78,13 @@ input[type=password]
   font-size: 16px;
 }
 
-.institution input:focus {
+.recruiter input:focus {
   border-color: #007bff;
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
 }
 
-.institution button {
+.recruiter button {
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
@@ -97,18 +95,16 @@ input[type=password]
   transition: background-color 0.3s;
 }
 
-
-
-.institution button:hover {
+.recruiter button:hover {
   background-color: #0056b3;
 }
 
-.institution button:active {
+.recruiter button:active {
   background-color: #004085;
 }
 
 
-.institution input {
+.recruiter input {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
@@ -117,12 +113,12 @@ input[type=password]
   transition: border-color 0.3s, background-color 0.3s; 
 }
 
-.institution input:hover {
+.recruiter input:hover {
   border-color: #0056b3;
   background-color: #f1faff; 
 }
 
-.institution input:focus {
+.recruiter input:focus {
   border-color: #007bff;
   background-color: #e9f5ff; 
   outline: none; 

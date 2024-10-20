@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Topbar from "../Navbar/Topbar";
 import './about.css';
+import Category from "../category/Category";
 
 
 export default function About()
@@ -55,6 +56,8 @@ export default function About()
             </div>
 
         </div>
+
+        
        
         
         

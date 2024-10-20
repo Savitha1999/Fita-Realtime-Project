@@ -7,6 +7,8 @@ import './topbar.css';
 import logo1 from '../images/logo1.png';
 import { MdWork } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
+import { BsPeople } from "react-icons/bs";
+import { BiSolidUserCheck } from "react-icons/bi";
 
 
 export default function Topbar() 
@@ -28,21 +30,28 @@ export default function Topbar()
                         <Nav.Link as={Link} to="/about" className="text-white">
                             <IoInformationCircle style={{ marginRight: "5px" }} /> About
                         </Nav.Link>
+
                         <Nav.Link as={Link} to="/category" className="text-white">
                             <FaBookReader style={{ marginRight: "5px" }} /> Category
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/register" className="text-white">
+
+                        {/* <Nav.Link as={Link} to="/userlogin" className="text-white">
+                            <BiSolidUserCheck  style={{ marginRight: "5px",fontSize:"25px" }} />  Recruiter
+                        </Nav.Link> */}
+                        {/* <Nav.Link as={Link} to="/register" className="text-white">
                             <IoBriefcase style={{ marginRight: "5px" }} /> Jobs
-                        </Nav.Link>
+                        </Nav.Link> */}
+
                         <Nav.Link as={Link} to="/applier" className="text-white">
-                            <IoPeople style={{ marginRight: "5px" }} /> Recruiter
+                            <IoPeople style={{ marginRight: "5px" }} /> Institution
                         </Nav.Link>
                         <Nav.Link as={Link} to="/menu" className="text-white">
                             <MdWork style={{ marginRight: "5px" }} /> Placement
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/clients" className="text-white">
+                        <Nav.Link as={Link} to="/testmonialsign" className="text-white">
                             <IoChatbubbles style={{ marginRight: "5px" }} /> Testimonial
                          </Nav.Link>
+                         
                      
 
                     <NavDropdown  
@@ -91,7 +100,10 @@ export default function Topbar()
                             <Button variant="success" className="custom-button p-2 m-1">Submit Your CV</Button>
                         </Link>
                         <Link to="/applier">
-                            <Button variant="warning" className="custom-button p-2 m-1">Recruiter Login</Button>
+                            <Button variant="warning" className="custom-button p-2 m-1">Institution Login</Button>
+                        </Link>
+                        <Link to="/userlogin">
+                            <Button variant="primary" className="custom-button p-2 m-1">Recruiter Login</Button>
                         </Link>
                     </Nav>
                 </Navbar.Collapse>

@@ -1,86 +1,65 @@
-#client{
-    width: 80%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 4rem 0;
 
-    @media(max-width:840px){
-        width: 90%;
-    }
 
-}
-span{
-    font-weight: 700;
-    text-transform: uppercase;
-    color: darkolivegreen;
-}
-
-h1{
-    padding-top: 1rem;
-    text-transform: capitalize;
-}
-#testimonial{
-    margin-top: 2rem;
-    position: relative;
-  
-}
-.card-map{
-    
+/* TestimonialSign.css */
+.signtest {
     display: flex;
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-    padding: 1rem 1rem;
-    margin: 0 1rem;
-    height: auto;
-   
-}
-.card-title{
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    min-height: 100vh; 
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-.quote{
-    font-size: 3rem;
-    color: #01be96;
-    opacity: 0.7;
-}
-.star{
-    color: #ffcd3c;
-        font-size: 1.3rem;
+.signtest
+.form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
 }
 
-.card-body p{
-    font-size: 0.8rem;
-    margin-bottom: 1.5rem;
+.signtest
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
-.card-footer{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+
+.signtest
+label {
+    display: block;
+    margin-bottom: 5px;
 }
-.card-img-end{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50px;
-    object-fit: cover;
+
+.signtest
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-.details h1{
-    font-size: 1.2rem;
-    font-weight: 700;
-    @media(max-width: 580px){
-        font-size: 1rem;
-      
+
+
+ .signtest
+.btn:hover {
+    background-color: green;
+    color: white;
+} 
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .signtest
+    .container {
+        padding: 10px; 
     }
-    @media(max-width: 538px){
-        font-size: 0.9rem;
-    }
-}
-.details p{
-    font-size: 0.8rem;
-    color: rgba(14, 2, 2, 0.5);
-    @media(max-width: 538px){
-        font-size: 0.6rem;
-       
+
+    .signtest
+    .form {
+        padding: 15px; 
     }
 }
 
@@ -88,19 +67,9 @@ h1{
 
 
 
-@media (max-width:600px) {
-     h1
-    {
-        margin-top: 100px;
-    }
-    
-}
 
 
-@media (max-width:1600px) {
-    h1
-   {
-       margin-top: 80px;
-   }
-   
-}
+
+
+
+

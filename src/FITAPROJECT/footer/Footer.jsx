@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <Container fluid className="footer bg-dark text-white py-3 ">
+    <Container fluid className="footer bg-dark text-white py-3 mt-3">
       <Row className="d-flex justify-content-between mt-3">
         <Col md="3" className="text-center text-md-left">
           <h2 className='m-2 mb-3' > Follow us </h2>

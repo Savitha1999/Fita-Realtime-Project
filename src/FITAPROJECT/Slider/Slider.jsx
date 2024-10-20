@@ -10,9 +10,11 @@ import fita8 from '../images/fita8.png';
 import Topbar from "../Navbar/Topbar";
 import About from "../about/About";
 import Menu from "../placement/Menu";
-import Clients from "../testmonial/Clients";
 import Category from "../category/Category";
 import Footer from "../footer/Footer";
+import Contact from "../contact/Contact";
+import Testimonial from "../testmonial/Testmonial";
+import TestimonialDetail from "../testmonial/TestimonialDetail";
 
 export default function Slider() {
     return (
@@ -60,6 +62,7 @@ export default function Slider() {
                                     <Link to='/applier'>
                                         <Button variant="info"  className="custom-button m-2  p-3">Recruiter Login</Button>
                                     </Link>
+                                   
                                 </Col>
                             </Row>
                         </Carousel.Caption>
@@ -112,7 +115,8 @@ export default function Slider() {
                 <Category />
                 {/* <AdminCard />  */}
                 <Menu />
-                <Clients />
+                <TestimonialDetail />
+                <Contact />
                 <Footer />
 
             </Container>

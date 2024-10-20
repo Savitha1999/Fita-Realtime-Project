@@ -1,19 +1,13 @@
 
-
-
-
-
-
-
 import React, { useState } from 'react';
+import './Userlogin.css';
 import Topbar from '../Navbar/Topbar';
-import './applier.css';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function Applier() {
+export default function UserLogin() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navi = useNavigate();
@@ -26,13 +20,13 @@ export default function Applier() {
     }
 
     try {
-      const checkResponse = await axios.post('http://localhost:5000/fita/Institutioncheck', {
+      const checkResponse = await axios.post('http://localhost:5000/fita/recruitercheck', {
         email: username
       });
 
       if (checkResponse.data.message === 'Recruiter exists.') {
   
-        const loginResponse = await axios.post('http://localhost:5000/fita/Institutionlogin', {
+        const loginResponse = await axios.post('http://localhost:5000/fita/recruiterlogin', {
           email: username,
           password: password
         });
@@ -47,8 +41,9 @@ export default function Applier() {
 
           
           setTimeout(() => {
-            navi('/card');
+            navi('/dashboard');
           }, 6000); 
+          
         } else {
           toast.error("Invalid credentials. Please try again.");
         }
@@ -65,8 +60,8 @@ export default function Applier() {
     <>
       <ToastContainer />
       <Topbar />
-      <div className='institution' style={{ marginTop: "180px" }}>
-        <h1 className='text-danger'>Institution Login</h1>
+      <div className='recruiter' style={{ marginTop: "180px" }}>
+        <h1 className='text-danger'>Recruiter Login</h1>
         <form onSubmit={handleSubmit}>
           <div>
             <label>Username:</label>
